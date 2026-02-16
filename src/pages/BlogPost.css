@@ -1,0 +1,101 @@
+.blogpost {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: var(--space-16) var(--page-padding) var(--space-12);
+}
+
+/* ---- Meta row: back + divider + date ---- */
+.blogpost__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+}
+
+.blogpost__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    transition: all var(--transition);
+}
+
+.blogpost__back:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-text-muted);
+    transform: scale(1.05);
+}
+
+.blogpost__divider {
+    width: 1px;
+    height: 20px;
+    background: var(--color-border);
+}
+
+.blogpost__date {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    white-space: nowrap;
+}
+
+/* ---- Title ---- */
+.blogpost__title {
+    font-size: var(--text-4xl);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin-bottom: var(--space-6);
+    color: var(--color-text-primary);
+}
+
+/* ---- Tags ---- */
+.blogpost__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-12);
+}
+
+.blogpost__tag {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-accent);
+}
+
+/* ---- Body ---- */
+.blogpost__body {
+    font-size: var(--text-base);
+    line-height: 1.9;
+    color: var(--color-text-primary);
+}
+
+.blogpost__body p {
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-8);
+}
+
+.blogpost__quote {
+    border-left: 3px solid var(--color-border);
+    padding-left: var(--space-6);
+    margin-bottom: var(--space-10);
+    font-style: italic;
+    font-size: var(--text-base);
+    line-height: 1.9;
+    color: var(--color-text-secondary);
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 768px) {
+    .blogpost {
+        padding: var(--space-10) var(--page-padding) var(--space-10);
+    }
+
+    .blogpost__title {
+        font-size: var(--text-2xl);
+    }
+}
