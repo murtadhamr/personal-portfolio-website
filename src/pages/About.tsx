@@ -28,28 +28,39 @@ export default function About() {
                             <div className="about__timeline-dot" />
                             <div className="about__timeline-content">
                                 <div className="about__timeline-header">
-                                    <span className="about__timeline-role">Senior Data Engineer</span>
-                                    <span className="about__timeline-date">2024 — Present</span>
+                                    <span className="about__timeline-role">Strategy & Analytics Manager</span>
+                                    <span className="about__timeline-date">Jan 2026 — Present</span>
                                 </div>
-                                <span className="about__timeline-company">TechCorp Inc.</span>
-                                <p className="about__timeline-desc">
-                                    Leading data platform initiatives, building scalable pipelines
-                                    processing 10M+ records daily using Python, Spark, and Airflow.
-                                </p>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.gotocompany.com/">GoTo Group</a></span>
+                                    <span className="about__timeline-location">Jakarta, Indonesia</span>
+                                </div>
                             </div>
                         </div>
                         <div className="about__timeline-item">
                             <div className="about__timeline-dot" />
                             <div className="about__timeline-content">
                                 <div className="about__timeline-header">
-                                    <span className="about__timeline-role">Data Engineer</span>
-                                    <span className="about__timeline-date">2022 — 2024</span>
+                                    <span className="about__timeline-role">Region User Growth Analytics Manager</span>
+                                    <span className="about__timeline-date">Mar 2025 - Jan 2026</span>
                                 </div>
-                                <span className="about__timeline-company">FinData Solutions</span>
-                                <p className="about__timeline-desc">
-                                    Built real-time analytics pipelines for fintech products,
-                                    reducing data latency by 80% and improving dashboard reliability.
-                                </p>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.gotocompany.com/">GoTo Group</a></span>
+                                    <span className="about__timeline-location">Jakarta, Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="about__timeline-item">
+                            <div className="about__timeline-dot" />
+                            <div className="about__timeline-content">
+                                <div className="about__timeline-header">
+                                    <span className="about__timeline-role">Business Intelligence Engineer Intern</span>
+                                    <span className="about__timeline-date">May 2024 — Aug 2024</span>
+                                </div>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.amazon.com/">Amazon</a></span>
+                                    <span className="about__timeline-location">Seattle, WA</span>
+                                </div>
                             </div>
                         </div>
                         <div className="about__timeline-item">
@@ -57,13 +68,51 @@ export default function About() {
                             <div className="about__timeline-content">
                                 <div className="about__timeline-header">
                                     <span className="about__timeline-role">Data Analyst</span>
-                                    <span className="about__timeline-date">2020 — 2022</span>
+                                    <span className="about__timeline-date">Sep 2021 — Jul 2023</span>
                                 </div>
-                                <span className="about__timeline-company">StartupXYZ</span>
-                                <p className="about__timeline-desc">
-                                    Created automated reporting systems and dashboards serving
-                                    cross-functional teams across the organization.
-                                </p>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.tokopedia.com/">Tokopedia</a></span>
+                                    <span className="about__timeline-location">Jakarta, Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="about__timeline-item">
+                            <div className="about__timeline-dot" />
+                            <div className="about__timeline-content">
+                                <div className="about__timeline-header">
+                                    <span className="about__timeline-role">Data Analyst</span>
+                                    <span className="about__timeline-date">Apr 2020 — Sep 2021</span>
+                                </div>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.grab.com/">Grab</a></span>
+                                    <span className="about__timeline-location">Jakarta, Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="about__timeline-item">
+                            <div className="about__timeline-dot" />
+                            <div className="about__timeline-content">
+                                <div className="about__timeline-header">
+                                    <span className="about__timeline-role">City Lead and Special Projects</span>
+                                    <span className="about__timeline-date">Sep 2019 — Apr 2020</span>
+                                </div>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.grab.com/">Grab</a></span>
+                                    <span className="about__timeline-location">North Sumatra, Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="about__timeline-item">
+                            <div className="about__timeline-dot" />
+                            <div className="about__timeline-content">
+                                <div className="about__timeline-header">
+                                    <span className="about__timeline-role">Operations Management Trainee</span>
+                                    <span className="about__timeline-date">Nov 2018 — Sep 2019</span>
+                                </div>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.grab.com/">Grab</a></span>
+                                    <span className="about__timeline-location">Various Cities, Indonesia</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -75,10 +124,26 @@ export default function About() {
                             <div className="about__timeline-dot" />
                             <div className="about__timeline-content">
                                 <div className="about__timeline-header">
-                                    <span className="about__timeline-role">B.S. Computer Science</span>
-                                    <span className="about__timeline-date">2016 — 2020</span>
+                                    <span className="about__timeline-role">M.S. Business Analytics</span>
+                                    <span className="about__timeline-date">2023 — 2024</span>
                                 </div>
-                                <span className="about__timeline-company">University of Technology</span>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.marshall.usc.edu/programs/graduate-programs/specialized-masters/ms-business-analytics">University of Southern California</a></span>
+                                    <span className="about__timeline-location">Los Angeles, CA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="about__timeline-item">
+                            <div className="about__timeline-dot" />
+                            <div className="about__timeline-content">
+                                <div className="about__timeline-header">
+                                    <span className="about__timeline-role">B.S. Computer Science</span>
+                                    <span className="about__timeline-date">2014 — 2018</span>
+                                </div>
+                                <div className="about__timeline-subheader">
+                                    <span className="about__timeline-company"><a href="https://www.ipb.ac.id/">IPB University</a></span>
+                                    <span className="about__timeline-location">Bogor, Indonesia</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -135,7 +200,7 @@ export default function About() {
 
                     <div className="about__links">
                         <a
-                            href="https://github.com"
+                            href="https://github.com/murtadhamr"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="about__link-item"
@@ -144,7 +209,7 @@ export default function About() {
                             <span>Follow on GitHub</span>
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://linkedin.com/in/murtadhamr"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="about__link-item"
@@ -152,9 +217,9 @@ export default function About() {
                             <FiLinkedin className="about__link-icon" />
                             <span>Follow on LinkedIn</span>
                         </a>
-                        <a href="mailto:hello@example.com" className="about__link-item">
+                        <a href="mailto:muhmurtadha29@gmail.com" className="about__link-item">
                             <FiMail className="about__link-icon" />
-                            <span>hello@example.com</span>
+                            <span>muhmurtadha29@gmail.com</span>
                         </a>
                     </div>
                 </div>

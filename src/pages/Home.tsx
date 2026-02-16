@@ -33,7 +33,7 @@ export default function Home() {
 
                 <div className="home__socials">
                     <a
-                        href="https://github.com"
+                        href="https://github.com/murtadhamr"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="home__social-icon"
@@ -42,7 +42,7 @@ export default function Home() {
                         <FiGithub />
                     </a>
                     <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/murtadhamr/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="home__social-icon"
@@ -51,7 +51,7 @@ export default function Home() {
                         <FiLinkedin />
                     </a>
                     <a
-                        href="mailto:hello@example.com"
+                        href="mailto:muhmurtadha29@gmail.com"
                         className="home__social-icon"
                         aria-label="Email"
                     >

@@ -89,10 +89,21 @@
     white-space: nowrap;
 }
 
-.about__timeline-company {
-    font-size: var(--text-sm);
+.about__timeline-company a {
     color: var(--color-accent);
-    font-weight: 500;
+}
+
+.about__timeline-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-4);
+}
+
+.about__timeline-location {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    white-space: nowrap;
 }
 
 .about__timeline-desc {
