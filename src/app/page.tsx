@@ -17,18 +17,18 @@ export default function HomePage() {
       {/* Hero */}
       <section className="mb-20">
         <h1 className="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-          Hi, I&apos;m Ado 👋
+          Hi, I{"'"}m Ado 👋
         </h1>
         <p>
-          I&apos;m a Strategy & Analytics Manager working at <a href="https://gojek.com"><u>Gojek (GoTo Group)</u></a>.
+          I{"'"}m a Strategy & Analytics Manager working at <a href="https://gojek.com"><u>Gojek (GoTo Group)</u></a>.
           focusing on leading and managing IDR billions on-demand services business portfolio using data analytics and business intelligence.
           <br></br>
           <br></br>
-          Prior to Gojek, I was working at some big tech companies namely Amazon, Tokopedia (Tiktok Shop), and Grab. I&apos;m mainly using SQL, Python, Data Viz tools,and Spreadsheets
+          Prior to Gojek, I was working at some big tech companies namely Amazon, Tokopedia (Tiktok Shop), and Grab. I{"'"}m mainly using SQL, Python, Data Viz tools,and Spreadsheets
           to compose data stories and insights to support business decisions.
           <br></br>
           <br></br>
-          I&apos;ve lived in several cities including Jakarta, Los Angeles, and Seattle for either work or studies — now in Jakarta.
+          I{"'"}ve lived in several cities including Jakarta, Los Angeles, and Seattle for either work or studies — now in Jakarta.
           I enjoy solving problems through data and AI which can drive substantial impacts and enormous values to not only for me as person, but for wider societies.
         </p>
       </section>
