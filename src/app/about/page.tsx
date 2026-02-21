@@ -7,25 +7,60 @@ export const metadata: Metadata = {
 
 const experience = [
     {
-        role: "Senior Data Analyst",
-        company: "Tech Company",
-        period: "2024 — Present",
+        role: "Strategy & Analytics Manager",
+        company: "Gojek (GoTo Group)",
+        period: "Jan 2026 — Present",
+        location: "Jakarta, Indonesia",
         description:
             "Leading data analysis initiatives and building dashboards for business intelligence across cross-functional teams.",
     },
     {
-        role: "Data Engineer",
-        company: "Startup Inc.",
-        period: "2022 — 2024",
+        role: "Region User Growth Analytics Manager",
+        company: "Gojek (GoTo Group)",
+        period: "Mar 2025 — Jan 2026",
+        location: "Jakarta, Indonesia",
         description:
             "Designed and maintained ETL pipelines using Apache Airflow and dbt, processing millions of records daily.",
     },
     {
-        role: "Data Analyst",
-        company: "Finance Corp.",
-        period: "2020 — 2022",
+        role: "Business Intelligence Engineer Intern",
+        company: "Amazon",
+        period: "May 2024 - Aug 2024",
+        location: "Seattle, WA, USA",
         description:
             "Built automated reporting systems and predictive models for market analysis and risk assessment.",
+    },
+    {
+        role: "Data Analyst",
+        company: "Tokopedia",
+        period: "Sep 2021 - Jul 2023",
+        location: "Jakarta, Indonesia",
+        description:
+            "Built automated reporting systems and predictive models for market analysis and risk assessment.",
+    },
+    {
+        role: "Data Analyst",
+        company: "Grab",
+        period: "Apr 2020 - Sep 2021",
+        location: "Jakarta, Indonesia",
+        description:
+            "Built automated reporting systems and predictive models for market analysis and risk assessment.",
+    },
+    {
+        role: "City Lead & Special Projects",
+        company: "Grab",
+        period: "Sep 2019 - Mar 2020",
+        location: "Jakarta, Indonesia",
+        description:
+            "Led city-level operations and executed special projects to drive business growth.",
+    },
+    {
+        role: "Operations Management Trainee",
+        company: "Grab",
+        period: "Nov 2018 - Sep 2019",
+        location: "Various Cities, Indonesia",
+        description:
+            "Rotated across multiple operational functions, including driver operations, merchant services, and city logistics.",
     },
 ];
 
@@ -80,7 +115,7 @@ export default function AboutPage() {
                         >
                             {/* Timeline dot */}
                             <div className="absolute -left-[5px] top-6 h-2 w-2 rounded-full bg-[var(--muted)]" />
-                            <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                                 <h3 className="font-medium text-[var(--foreground)]">
                                     {exp.role}
                                     <span className="text-[var(--muted)] font-normal"> · {exp.company}</span>
@@ -89,7 +124,12 @@ export default function AboutPage() {
                                     {exp.period}
                                 </span>
                             </div>
-                            <p className="text-sm text-[var(--muted)]">{exp.description}</p>
+                            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                                <p className="text-sm text-[var(--muted)]">{exp.description}</p>
+                                <span className="shrink-0 text-sm text-[var(--muted)] italic sm:ml-6">
+                                    {exp.location}
+                                </span>
+                            </div>
                         </div>
                     ))}
                 </div>
