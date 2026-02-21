@@ -1,0 +1,60 @@
+---
+title: "Factor Investing: A Quantitative Approach to Market Analysis"
+date: "2026-02-10"
+excerpt: "Exploring systematic factor-based strategies for investment analysis using Python and statistical modeling."
+tags: ["Python", "Finance", "Data Science"]
+---
+
+## What is Factor Investing?
+
+Factor investing is an investment approach that targets specific drivers of returns across asset classes. Rather than picking individual stocks, factor investors systematically allocate capital based on measurable characteristics.
+
+## Key Factors
+
+The most widely studied factors include:
+
+1. **Value** — stocks trading below intrinsic value
+2. **Momentum** — assets that have performed well recently
+3. **Quality** — companies with strong fundamentals
+4. **Size** — smaller companies tend to outperform
+5. **Low Volatility** — less volatile stocks, higher risk-adjusted returns
+
+## Implementing a Factor Model
+
+```python
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+def calculate_factor_exposures(returns_df, factor_df):
+    """Calculate factor exposures using regression."""
+    model = LinearRegression()
+    model.fit(factor_df, returns_df)
+    
+    exposures = pd.Series(
+        model.coef_,
+        index=factor_df.columns,
+        name='Factor Exposures'
+    )
+    return exposures
+```
+
+## Risk Management
+
+Factor investing also helps in understanding portfolio risk decomposition:
+
+```python
+def risk_decomposition(weights, factor_cov, specific_risk):
+    """Decompose total portfolio risk into factor and specific risk."""
+    factor_risk = weights.T @ factor_cov @ weights
+    total_risk = factor_risk + specific_risk
+    return {
+        'factor_risk': np.sqrt(factor_risk),
+        'specific_risk': np.sqrt(specific_risk),
+        'total_risk': np.sqrt(total_risk),
+    }
+```
+
+## Conclusion
+
+Factor investing provides a systematic framework for understanding and capturing return premiums. By combining quantitative analysis with disciplined execution, investors can build more robust portfolios.

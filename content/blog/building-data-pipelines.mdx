@@ -1,0 +1,71 @@
+---
+title: "Building a Data Pipeline with Python and Apache Airflow"
+date: "2026-02-15"
+excerpt: "A deep dive into designing and implementing scalable data pipelines using Python and Apache Airflow for ETL workflows."
+tags: ["Python", "Airflow", "Data Engineering"]
+---
+
+## Introduction
+
+Data pipelines are the backbone of modern data infrastructure. In this article, we'll explore how to build robust ETL workflows using **Apache Airflow** and **Python**.
+
+## Why Airflow?
+
+Apache Airflow provides a platform to programmatically author, schedule, and monitor workflows. Its key advantages include:
+
+- **Dynamic pipeline generation** — pipelines are defined as code
+- **Extensibility** — custom operators and hooks
+- **Rich UI** — for monitoring and debugging
+
+## Setting Up the Pipeline
+
+First, let's define our DAG structure:
+
+```python
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+from datetime import datetime
+
+default_args = {
+    'owner': 'data-team',
+    'start_date': datetime(2026, 1, 1),
+    'retries': 3,
+}
+
+dag = DAG(
+    'etl_pipeline',
+    default_args=default_args,
+    schedule_interval='@daily',
+)
+```
+
+## Data Extraction
+
+The extraction phase connects to various data sources — APIs, databases, and file systems:
+
+```python
+def extract_data(**kwargs):
+    """Extract data from source systems."""
+    import requests
+    response = requests.get('https://api.example.com/data')
+    return response.json()
+```
+
+## Transformation & Loading
+
+Once data is extracted, we apply transformations and load into our data warehouse:
+
+```sql
+INSERT INTO analytics.daily_metrics
+SELECT
+    date_trunc('day', event_timestamp) as event_date,
+    COUNT(DISTINCT user_id) as unique_users,
+    SUM(revenue) as total_revenue
+FROM raw.events
+WHERE event_timestamp >= CURRENT_DATE - INTERVAL '1 day'
+GROUP BY 1;
+```
+
+## Conclusion
+
+Building reliable data pipelines requires careful consideration of error handling, monitoring, and scalability. Airflow provides the tools to manage this complexity effectively.
