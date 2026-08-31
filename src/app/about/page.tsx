@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const experience = [
     {
-        role: "Strategy & Analytics Manager",
+        role: "Data Analytics & Insights Manager",
         company: "Gojek (GoTo Group)",
         period: "Jan 2026 — Present",
         location: "Jakarta, Indonesia",

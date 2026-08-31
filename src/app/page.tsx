@@ -20,7 +20,7 @@ export default function HomePage() {
           Hi, I’m Ado 👋
         </h1>
         <p>
-          I’m a Strategy & Analytics Manager working at <a href="https://gojek.com"><u>Gojek (GoTo Group)</u></a>.
+          I’m a Data Analytics & Insights Manager working at <a href="https://gojek.com"><u>Gojek (GoTo Group)</u></a>.
           focusing on leading and managing IDR billions on-demand services business portfolio using data analytics and business intelligence.
           <br></br>
           <br></br>
