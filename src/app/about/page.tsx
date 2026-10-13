@@ -100,7 +100,7 @@ export default function AboutPage() {
                         I enjoy building end-to-end data systems — from pipeline development to
                         dashboard creation — and writing about what I learn along the way.
                         When I’m not working with data, you’ll find me exploring new
-                        technologies and contributing to open-source projects.
+                        technologies and playing games.
                     </p>
                 </div>
             </section>
