@@ -90,10 +90,11 @@ export default function AboutPage() {
                 <h1 className="mb-4 text-3xl font-bold tracking-tight">About Me</h1>
                 <div className="space-y-4 text-[var(--muted)] leading-relaxed">
                     <p>
-                        I am a Data & Analytics leader obsessed with the “why” behind the numbers.
-                        With a Master of Science in Business Analytics from USC and experience across global tech giants (Amazon, GoTo, Grab),
-                        I bridge the gap between complex machine learning and actionable business strategy.
-                        I don’t just extract data; I build the roadmaps that drive user growth and operational efficiency.
+                        I am a Data & Analytics leader obsessed with the “why” behind the numbers,
+                        and with what a team can actually do about it. With an MS in Business Analytics
+                        from USC and experience at Amazon, GoTo, and Grab, I don’t just extract data;
+                        I build analyses and machine learning models that answer real business and
+                        product questions to drive growth and operational efficiency.
                     </p>
                     <p>
                         I enjoy building end-to-end data systems — from pipeline development to
