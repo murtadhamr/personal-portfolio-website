@@ -9,18 +9,10 @@ const experience = [
     {
         role: "Data Analytics & Insights Manager",
         company: "Gojek (GoTo Group)",
-        period: "Jan 2026 — Present",
+        period: "Mar 2025 — Present",
         location: "Jakarta, Indonesia",
         description:
             "Leading data analysis initiatives and building dashboards for business intelligence across cross-functional teams.",
-    },
-    {
-        role: "Region User Growth Analytics Manager",
-        company: "Gojek (GoTo Group)",
-        period: "Mar 2025 — Jan 2026",
-        location: "Jakarta, Indonesia",
-        description:
-            "Designed and maintained ETL pipelines using Apache Airflow and dbt, processing millions of records daily.",
     },
     {
         role: "Business Intelligence Engineer Intern",
